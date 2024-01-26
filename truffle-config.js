@@ -1,3 +1,5 @@
+const HDWalletProvider = require('@truffle/hdwallet-provider')
+const privateKeys = ['0x3b6dd540cf4f516ed104d4f6018f14002d35384b7d609eb7e3f9a276691dd79a']
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -96,6 +98,22 @@ module.exports = {
     //   network_id: 2111,   // This network is yours, in the cloud.
     //   production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    bSc: {
+      provider: () => new HDWalletProvider (
+        privatekeys,
+        'https://bsc-dataseed.binance.org/'
+      ),
+      network_id: 56,
+      skipDryRun: true
+    },
+    bscTestnet: {
+      provider: () => new HDWalletProvider(
+      privateKeys,
+      'https://data-seed-prebsc-1-s1.binance.org:8545/'
+      ),
+      network_id: 97,
+      skipDryRun: true
+      }
   },
 
   // Set default mocha options here, use special reporters, etc.

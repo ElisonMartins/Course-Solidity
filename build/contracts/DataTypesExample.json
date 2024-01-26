@@ -14837,7 +14837,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-01-26T16:17:59.711Z",
+  "updatedAt": "2024-01-26T23:38:19.307Z",
   "devdoc": {
     "details": "A sample contract demonstrating the usage of data types and basic functionalities in Solidity.",
     "kind": "dev",
