@@ -27,4 +27,5 @@ Compile smart contracts and migrate them to the blockchain. Make sure you have a
 
 Run tests to verify code integrity.
 
+
 ```npx truffle test```
