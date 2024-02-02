@@ -1,5 +1,5 @@
-const DataTypes = artifacts.require("DataTypes");
+const HelloWorld = artifacts.require("HelloWorld");
 
-module.exports = function(deployer) {
-    deployer.deploy(DataTypes);
+module.exports = function (deployer) {
+  deployer.deploy(HelloWorld);
 };
