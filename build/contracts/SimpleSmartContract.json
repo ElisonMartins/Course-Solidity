@@ -1,29 +1,29 @@
 {
   "contractName": "SimpleSmartContract",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleSmartContract.sol\":\"SimpleSmartContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleSmartContract.sol\":{\"keccak256\":\"0xb73d3d20180706881e9ab2f2370ac22a411d737d663879c08bf5fbac25256a07\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://18d84746349c50eed030756449debf2f97c90f459a0b334411af5bec67d77f4f\",\"dweb:/ipfs/QmeJ3dwRRrhaHtkYJZowp2z3HSFVaq8QzD3faDFu5FNLP4\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201c9a55f3449e1d6a5a6f2c78a8cff55c8aad16b6aed8b2ef8f1eb510cedf6a9d64736f6c63430008000033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201c9a55f3449e1d6a5a6f2c78a8cff55c8aad16b6aed8b2ef8f1eb510cedf6a9d64736f6c63430008000033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleSmartContract.sol\":\"SimpleSmartContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleSmartContract.sol\":{\"keccak256\":\"0x42194ce93179dd50ce25d8b66ae5457ece19a724fcd404bbfbe679c77480ecba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c0cd014ccdd7c061dd167eb8ae22567a1669ee7754ec7e2d40f3ee94b825970b\",\"dweb:/ipfs/QmUiJaeLkHv2fMwon6ATaytiopnKALQwi8k4N5e28ariyL\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204bd14d0a16b6879ac3dabaef3ad24b4bc4b918011ee2b4e311d38ecf7c37331764736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212204bd14d0a16b6879ac3dabaef3ad24b4bc4b918011ee2b4e311d38ecf7c37331764736f6c63430008000033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "60:31:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "60:31:1:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract SimpleSmartContract {}\r\n",
+  "sourceMap": "76:31:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "76:31:2:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n//Empty contract\r\ncontract SimpleSmartContract {}\r\n",
   "sourcePath": "C:\\Users\\eliso\\Documents\\projetos\\course-solidity\\contracts\\SimpleSmartContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleSmartContract.sol",
     "exportedSymbols": {
       "SimpleSmartContract": [
-        13
+        61
       ]
     },
-    "id": 14,
+    "id": 62,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 12,
+        "id": 60,
         "literals": [
           "solidity",
           "^",
@@ -31,7 +31,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:1"
+        "src": "33:23:2"
       },
       {
         "abstract": false,
@@ -39,26 +39,33 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 13,
+        "id": 61,
         "linearizedBaseContracts": [
-          13
+          61
         ],
         "name": "SimpleSmartContract",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 14,
-        "src": "60:31:1"
+        "scope": 62,
+        "src": "76:31:2"
       }
     ],
-    "src": "33:60:1"
+    "src": "33:76:2"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x1E8E289047a35EB348fA357fC7FA0458BcE1ff15",
+      "transactionHash": "0xeb3288f74388fb68eaa0a1324f8c797579e9b54401a8f44d450be4c9adcae29a"
+    }
+  },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-02-04T22:35:28.965Z",
+  "updatedAt": "2024-02-05T12:41:01.596Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

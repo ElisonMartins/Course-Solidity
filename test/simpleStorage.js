@@ -5,6 +5,6 @@ contract('SimpleStorage', () => {
         const simpleStorage = await SimpleStorage.deployed();
         await simpleStorage.set('this'); //Using if function to change the variable
         const result = await simpleStorage.get();
-        assert(result === 'this') //Testing whether the value was changed correctly
+        assert(result === 'this'); //Testing whether the value was changed correctly
     });
 });
