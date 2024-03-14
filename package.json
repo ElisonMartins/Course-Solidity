@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@synthetixio/synpress": "^3.7.2-beta.10"
+  }
+}

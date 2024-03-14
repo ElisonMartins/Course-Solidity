@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="button-container">
+            <button onclick="connectMetamask()">Connect to Metamask</button>
+            <p id="accountArea"></p>
+            <button onclick="connectContract()">Connect to Contract</button>
+            <p id="contractArea"></p>
+            <button onclick="readContract()">Get data from Contract</button>
+            <p id="dataArea"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -33,5 +33,4 @@ contract('Crud', () => {
         assert(user[1] === 'Frankk');
     });
 
-    // Additional test cases for other CRUD operations can be added here
 });
