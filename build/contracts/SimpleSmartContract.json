@@ -7,23 +7,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "76:31:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "76:31:2:-:0;;;;;",
+  "sourceMap": "76:31:4:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "76:31:4:-:0;;;;;",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n//Empty contract\r\ncontract SimpleSmartContract {}\r\n",
   "sourcePath": "C:\\Users\\eliso\\Documents\\projetos\\course-solidity\\contracts\\SimpleSmartContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/SimpleSmartContract.sol",
     "exportedSymbols": {
       "SimpleSmartContract": [
-        61
+        199
       ]
     },
-    "id": 62,
+    "id": 200,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 60,
+        "id": 198,
         "literals": [
           "solidity",
           "^",
@@ -31,7 +31,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:2"
+        "src": "33:23:4"
       },
       {
         "abstract": false,
@@ -39,18 +39,18 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 61,
+        "id": 199,
         "linearizedBaseContracts": [
-          61
+          199
         ],
         "name": "SimpleSmartContract",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 62,
-        "src": "76:31:2"
+        "scope": 200,
+        "src": "76:31:4"
       }
     ],
-    "src": "33:76:2"
+    "src": "33:76:4"
   },
   "compiler": {
     "name": "solc",
@@ -60,12 +60,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x1E8E289047a35EB348fA357fC7FA0458BcE1ff15",
-      "transactionHash": "0xeb3288f74388fb68eaa0a1324f8c797579e9b54401a8f44d450be4c9adcae29a"
+      "address": "0x8aeE392368c89ec32c20928FC82D4687E95Cd3c1",
+      "transactionHash": "0x73bfc024db3812f3287af3069c4e8bd0c7d8e30a48777c302cacd912d15656da"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-02-05T12:41:01.596Z",
+  "updatedAt": "2024-02-07T12:21:09.426Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

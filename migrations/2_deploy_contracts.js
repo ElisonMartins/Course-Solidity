@@ -1,4 +1,4 @@
-const contractsToDeploy = ["SimpleStorage", "AdvancedStorage", "HelloWorld", "SimpleSmartContract", "Crud"]; 
+const contractsToDeploy = ["SimpleStorage", "AdvancedStorage", "HelloWorld", "SimpleSmartContract", "Crud", "Simple"]; 
 
 module.exports = function (deployer) {
   contractsToDeploy.forEach(async (contractName) => {
