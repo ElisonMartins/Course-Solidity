@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@synthetixio/synpress": "^3.7.2-beta.10",
-    "cypress": "^12.17.3"
+    "cypress": "^12.17.3",
+    "hardhat": "^2.22.1"
   }
 }
