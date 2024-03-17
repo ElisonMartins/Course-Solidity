@@ -2,7 +2,7 @@
 ## Introdução
 Esta documentação destina-se a fornecer uma visão geral do projeto e um guia passo a passo sobre sua estrutura de pastas, componentes e processos principais, incluindo implantação de contratos e testes automatizados.
 ## Estrutura de Pastas
-O projeto segue uma estrutura organizada para facilitar o desenvolvimento, teste e implantação de contratos inteligentes. Aqui está a estrutura de pastas do projeto:
+O projeto segue uma estrutura organizada para facilitar o desenvolvimento, teste e implantação de contratos inteligentes. Aqui está a estrutura de pastas do projeto :
 ```
 project-root/
 │
