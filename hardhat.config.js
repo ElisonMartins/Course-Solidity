@@ -1,10 +1,9 @@
-require("@nomiclabs/hardhat-waffle")
-require("@nomiclabs/hardhat-ethers")
-require('@openzeppelin/hardhat-upgrades')
-require("@nomiclabs/hardhat-etherscan")
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-ethers");
+require('@openzeppelin/hardhat-upgrades');
+require("@nomiclabs/hardhat-etherscan");
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
+// Task para listar contas
 task("accounts", "Prints the list of accounts", async () => {
   const accounts = await ethers.getSigners()
 
@@ -13,50 +12,38 @@ task("accounts", "Prints the list of accounts", async () => {
   }
 })
 
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
-
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL || process.env.ALCHEMY_MAINNET_RPC_URL || "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
-const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby.alchemyapi.io/v2/your-api-key"
-const KOVAN_RPC_URL = process.env.KOVAN_RPC_URL || "https://eth-kovan.alchemyapi.io/v2/your-api-key"
-const MNEMONIC = process.env.MNEMONIC || "your mnemonic"
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "Your etherscan API key"
-// optional
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "your private key"
+const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "https://sepolia.infura.io/v3/your-api-key";
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "Your etherscan API key";
+const PRIVATE_KEY = process.env.PRIVATE_KEY || "your private key";
+
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "sepolia", // Alterada para "sepolia"
   networks: {
     hardhat: {
     },
     local: {
       url: 'http://127.0.0.1:8545/'
     },
-    rinkeby: {
-      url: RINKEBY_RPC_URL,
-      // accounts: [PRIVATE_KEY],
-      accounts: {
-        mnemonic: MNEMONIC,
-      },
+    sepolia: { // Adicionada configuração para a rede "sepolia"
+      url: SEPOLIA_RPC_URL,
+      accounts: [PRIVATE_KEY], // Você pode optar por usar a chave privada aqui
       saveDeployments: true,
     },
   },
   solidity: "0.8.2",
   namedAccounts: {
     deployer: {
-      default: 0, // here this will by default take the first account as deployer
-      1: 0 // similarly on mainnet it will take the first account as deployer. Note though that depending on how hardhat network are configured, the account 0 on one network can be different than on another
+      default: 0,
+      1: 0
     },
     feeCollector: {
       default: 1
     }
   },
   etherscan: {
-    // Your API key for Etherscan
-    // Obtain one at https://etherscan.io/
     apiKey: ETHERSCAN_API_KEY
   },
 }
-
