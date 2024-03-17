@@ -1,4 +1,5 @@
 // scripts/deploy.js
+//script para testes
 async function main() {
     const { ethers, upgrades } = require("hardhat");
 
