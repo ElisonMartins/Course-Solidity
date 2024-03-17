@@ -14,7 +14,7 @@ contract Box {
         emit ValueChanged(newValue);
     }
  
-    // Reads the last stored value
+    // Reads the last stored 
     function retrieve() public view returns (uint256) {
         return value;
     }
